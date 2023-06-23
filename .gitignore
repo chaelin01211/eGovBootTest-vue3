@@ -1,0 +1,48 @@
+### Node.js ###
+# Dependency directories
+node_modules/
+
+# nuxt
+.nuxt
+dist
+
+
+### Eclipse ###
+.metadata
+/bin
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+.recommenders
+
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+
+# sbteclipse plugin
+.target
+target/
+
+
+### Maven ###
+.mvn/
+mvnw
+mvnw.cmd
+*.versionsBackup
+
+
+### IntelliJ ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+### Visual Studio Code ###
+.vscode/
+
+*.class
