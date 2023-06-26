@@ -2,10 +2,12 @@
 # Dependency directories
 node_modules/
 
-# nuxt
+# Nuxt dev/build outputs
+.output
 .nuxt
+.nitro
+.cache
 dist
-
 
 ### Eclipse ###
 .metadata
@@ -18,15 +20,12 @@ dist
 .loadpath
 .recommenders
 
-
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
-
 
 # sbteclipse plugin
 .target
 target/
-
 
 ### Maven ###
 .mvn/
@@ -34,6 +33,9 @@ mvnw
 mvnw.cmd
 *.versionsBackup
 
+# Misc
+.DS_Store
+.fleet
 
 ### IntelliJ ###
 .idea
@@ -41,8 +43,17 @@ mvnw.cmd
 *.iml
 *.ipr
 
-
 ### Visual Studio Code ###
 .vscode/
 
 *.class
+.project
+**/META-INF/
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
