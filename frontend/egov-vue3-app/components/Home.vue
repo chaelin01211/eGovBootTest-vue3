@@ -4,13 +4,13 @@
     <div>
       <h2>API Sample Test</h2>
 
-      <input type="button" @click="getSample()" value="api call" />
-      <div v-if="sampleData.pending == true">
+      <input type="button" @click="clickButton" value="api call" />
+      <div v-if="sampleData?.pending == true">
         <p>loading...</p>
       </div>
-      <div v-else-if="sampleData.pending == false">
+      <div v-else-if="sampleData?.pending == false">
         <input type="button" @click="sampleData?.refresh" value="refresh" />
-        <p>{{ sampleData.data }}</p>
+        <p>{{ sampleData?.data }}</p>
         <div>
           <p v-for="item in sampleData.data?.resultList">{{ item }}</p>
         </div>
@@ -38,9 +38,12 @@ const props = defineProps({
 });
 
 // api test sample
-const sampleState = useSampleApi();
-const { getSample } = sampleState;
-const { sampleData } = storeToRefs(sampleState);
+const { getSample } = useSampleApi();
+
+const sampleData = ref({});
+async function clickButton() {
+  sampleData.value = await getSample();
+}
 //--
 
 // store sample

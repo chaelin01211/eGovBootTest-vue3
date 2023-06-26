@@ -15,5 +15,8 @@ export default {
         autoImports: ["defineStore", "acceptHMRUpdate"]
       }
     ]
-  ]
+  ],
+  imports: {
+    dirs: ["stores"] // auto-import directory 추가
+  }
 };
