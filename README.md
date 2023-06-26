@@ -25,7 +25,7 @@
       |- layouts      // 페이지 레이아웃 파일
       |- middleware   // 미들웨어 파일
       |- pages        // 라우팅되는 페이지 파일
-      |- plugins      // 라우팅되는 페이지 파일
+      |- plugins      // Vue 플러그인 파일을 저장
       |- public       // 정적 파일 (Vue2의 /static 경로와 동일)
       |- utils        // 유틸리티 함수나 도우미 함수들을 저장 -> Auto Import
       ```
