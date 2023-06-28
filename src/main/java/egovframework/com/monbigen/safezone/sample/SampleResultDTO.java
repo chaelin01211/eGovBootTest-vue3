@@ -1,4 +1,4 @@
-package egovframework.sample;
+package egovframework.com.monbigen.safezone.sample;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
