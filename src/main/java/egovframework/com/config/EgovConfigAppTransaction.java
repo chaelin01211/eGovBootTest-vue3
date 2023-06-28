@@ -42,7 +42,7 @@ public class EgovConfigAppTransaction {
 	@Autowired
 	DataSource dataSource;
 
-	@Bean
+	@Bean(name="transactionManager")
 	public DataSourceTransactionManager txManager() {
 		DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager();
 		dataSourceTransactionManager.setDataSource(dataSource);
